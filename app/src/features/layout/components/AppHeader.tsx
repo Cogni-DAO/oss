@@ -15,7 +15,7 @@
 
 "use client";
 
-import Image from "next/image";
+import { Boxes } from "lucide-react";
 import Link from "next/link";
 import type { ReactElement } from "react";
 
@@ -45,15 +45,12 @@ export function AppHeader(): ReactElement {
               aria-current="page"
               className="flex min-w-0 items-center gap-2 pl-4 sm:pl-0"
             >
-              <Image
-                src="/TransparentBrainOnly.png"
-                alt="Cogni Brain Logo"
-                width={24}
-                height={24}
-                className="shrink-0"
+              <Boxes
+                aria-label="cogni/oss logo"
+                className="size-6 shrink-0 text-primary"
               />
               <span className="hidden truncate font-bold text-gradient-accent text-xl md:inline">
-                Cogni
+                cogni<span className="text-primary">/oss</span>
               </span>
             </Link>
 
