@@ -15,13 +15,13 @@
 
 import {
   BookOpen,
-  Boxes,
   Briefcase,
   CreditCard,
   Github,
   LayoutDashboard,
   Shield,
   Vote,
+  Waypoints,
 } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -93,7 +93,7 @@ export function AppSidebar(): ReactElement {
             <SidebarMenuButton size="lg" asChild tooltip="cogni/oss">
               <Link href="/chat">
                 <div className="flex aspect-square size-8 items-center justify-center">
-                  <Boxes
+                  <Waypoints
                     aria-label="cogni/oss logo"
                     className="size-5 text-primary"
                   />

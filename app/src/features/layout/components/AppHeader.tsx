@@ -15,7 +15,7 @@
 
 "use client";
 
-import { Boxes } from "lucide-react";
+import { Waypoints } from "lucide-react";
 import Link from "next/link";
 import type { ReactElement } from "react";
 
@@ -45,7 +45,7 @@ export function AppHeader(): ReactElement {
               aria-current="page"
               className="flex min-w-0 items-center gap-2 pl-4 sm:pl-0"
             >
-              <Boxes
+              <Waypoints
                 aria-label="cogni/oss logo"
                 className="size-6 shrink-0 text-primary"
               />
