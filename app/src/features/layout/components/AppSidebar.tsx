@@ -21,8 +21,8 @@ import {
   LayoutDashboard,
   Shield,
   Vote,
-  Waypoints,
 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useSession } from "next-auth/react";
@@ -90,16 +90,18 @@ export function AppSidebar(): ReactElement {
       <SidebarHeader className="h-16 shrink-0 justify-center">
         <SidebarMenu>
           <SidebarMenuItem>
-            <SidebarMenuButton size="lg" asChild tooltip="cogni/oss">
+            <SidebarMenuButton size="lg" asChild tooltip="Cogni">
               <Link href="/chat">
                 <div className="flex aspect-square size-8 items-center justify-center">
-                  <Waypoints
-                    aria-label="cogni/oss logo"
-                    className="size-5 text-primary"
+                  <Image
+                    src="/TransparentBrainOnly.png"
+                    alt="Cogni"
+                    width={24}
+                    height={24}
                   />
                 </div>
                 <span className="truncate font-bold text-gradient-accent">
-                  cogni<span className="text-primary">/oss</span>
+                  Cogni
                 </span>
               </Link>
             </SidebarMenuButton>
